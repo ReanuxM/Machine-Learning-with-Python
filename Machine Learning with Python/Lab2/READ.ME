@@ -1,0 +1,184 @@
+# 🚗 CO2 Emission Prediction using Multiple Linear Regression
+
+## Project Overview
+
+This project demonstrates building a Multiple Linear Regression Machine Learning model using Scikit-learn to predict vehicle CO2 emissions.
+
+The model uses multiple vehicle features to learn the relationship between vehicle specifications and CO2 emissions.
+
+The project covers the complete Machine Learning workflow:
+
+- Data loading
+- Data cleaning
+- Data exploration
+- Data visualization
+- Feature scaling
+- Train/Test splitting
+- Model training
+- Prediction
+- Model evaluation
+- 3D regression visualization
+
+## Dataset
+
+The dataset used in this project is the Fuel Consumption CO2 dataset provided by IBM Developer Skills Network.
+
+The dataset contains information about different vehicles, including:
+
+- Engine Size
+- Fuel Consumption
+- Cylinders
+- CO2 Emissions
+
+Target variable:
+
+CO2EMISSIONS
+
+## Libraries Used
+
+The project was developed using Python and the following libraries:
+
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+## Data Preparation
+
+The dataset was cleaned by removing unnecessary columns and selecting the most relevant features.
+
+Selected features:
+
+- ENGINESIZE
+- FUELCONSUMPTION_COMB
+
+Target:
+
+- CO2EMISSIONS
+
+The data was standardized using:
+
+StandardScaler
+
+to improve model performance.
+
+The dataset was split into:
+
+- 80% Training Data
+- 20% Testing Data
+
+using train_test_split.
+
+## Machine Learning Model
+
+A Multiple Linear Regression model was created using:
+
+LinearRegression()
+
+The model predicts CO2 emissions based on multiple input variables.
+
+The regression equation is:
+
+y = b + (m1*x1) + (m2*x2)
+
+where:
+
+- y = predicted CO2 emissions
+- b = intercept
+- m = feature coefficients
+- x = input features
+
+## Model Training
+
+The model was trained using the training dataset.
+
+During training, the algorithm learns the relationship between:
+
+- Engine Size
+- Fuel Consumption
+
+and:
+
+- CO2 Emissions
+
+## Prediction
+
+After training, the model was used to predict CO2 emissions for the testing dataset.
+
+Example:
+
+model.predict()
+
+The predictions were compared with actual values to evaluate model performance.
+
+## 3D Regression Visualization
+
+A 3D visualization was created to show:
+
+- Actual data points
+- Regression plane
+- Predicted values
+
+This visualization helps understand how multiple features affect the target variable.
+
+## Model Evaluation
+
+The model was evaluated using regression metrics:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+These metrics measure prediction accuracy and how well the model fits the data.
+
+## Results
+
+The model successfully learned the relationship between vehicle features and CO2 emissions.
+
+Observations:
+
+- Increasing engine size increases CO2 emissions.
+- Higher fuel consumption increases emissions.
+- Multiple Linear Regression provides a strong baseline model for this prediction task.
+
+## Project Structure
+
+Multiple-Linear-Regression/
+
+├── FuelConsumptionCo2.csv  
+├── Multiple Linear Regression.ipynb  
+└── README.md  
+
+## How to Run
+
+Install required dependencies:
+
+pip install numpy pandas matplotlib seaborn scikit-learn
+
+Run Jupyter Notebook:
+
+jupyter notebook
+
+Open:
+
+Multiple Linear Regression.ipynb
+
+## Skills Demonstrated
+
+- Python Programming
+- Data Cleaning
+- Exploratory Data Analysis
+- Data Visualization
+- Feature Scaling
+- Machine Learning
+- Multiple Linear Regression
+- Model Evaluation
+
+## Author
+
+Mohammed Mahrous
+
+Computer Scientist  
+Machine Learning & AI Engineer
