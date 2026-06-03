@@ -1,0 +1,159 @@
+# 🚗 CO2 Emission Prediction using Simple Linear Regression
+
+## Project Overview
+
+This project demonstrates building a Simple Linear Regression Machine Learning model using Scikit-learn to predict vehicle CO2 emissions.
+
+The model uses vehicle features such as Engine Size, Cylinders, and Fuel Consumption to learn the relationship between these features and CO2 emissions.
+
+The project workflow includes data loading, exploration, visualization, preprocessing, model training, prediction, and evaluation.
+
+## Dataset
+
+The dataset used in this project is the Fuel Consumption CO2 dataset provided by IBM Developer Skills Network.
+
+The dataset contains vehicle information including:
+
+- Engine Size
+- Cylinders
+- Fuel Consumption
+- CO2 Emissions
+
+The target variable is:
+
+CO2EMISSIONS
+
+## Libraries Used
+
+The project was implemented using Python with the following libraries:
+
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+
+## Project Steps
+
+### 1. Data Loading and Exploration
+
+The dataset was loaded using Pandas and explored to understand its structure, features, and statistical information.
+
+### 2. Data Visualization
+
+Different visualizations were created to analyze relationships between vehicle features and CO2 emissions.
+
+The analysis showed that:
+
+- Larger engine sizes generally produce higher CO2 emissions.
+- Higher fuel consumption leads to higher CO2 emissions.
+
+### 3. Data Preparation
+
+The selected features were:
+
+- ENGINESIZE
+- CYLINDERS
+- FUELCONSUMPTION_COMB
+
+The target feature:
+
+- CO2EMISSIONS
+
+The dataset was divided into:
+
+- 80% Training Data
+- 20% Testing Data
+
+using train_test_split from Scikit-learn.
+
+## Machine Learning Model
+
+A Simple Linear Regression model was created using:
+
+LinearRegression()
+
+The model learns the relationship between the input feature and the output target using the equation:
+
+y = mx + b
+
+where:
+
+- y represents predicted CO2 emissions
+- m represents the coefficient
+- b represents the intercept
+
+## Model Training and Prediction
+
+The model was trained using the training dataset.
+
+After training, the model was used to predict CO2 emissions for the test dataset.
+
+## Model Evaluation
+
+The model was evaluated using:
+
+Mean Absolute Error (MAE):
+24.10
+
+Mean Squared Error (MSE):
+985.94
+
+Root Mean Squared Error (RMSE):
+31.40
+
+R² Score:
+0.76
+
+The R² score indicates that the model explains approximately 76% of the variation in CO2 emissions.
+
+## Feature Comparison
+
+Two different features were tested:
+
+Engine Size:
+
+MSE = 985.94
+
+Fuel Consumption:
+
+MSE = 797.43
+
+The results show that Fuel Consumption provided better prediction performance compared to Engine Size.
+
+## Project Structure
+
+Simple-Linear-Regression/
+
+├── FuelConsumptionCo2.csv  
+├── simple_linear_regression.ipynb  
+└── README.md  
+
+## How to Run
+
+Install the required libraries:
+
+pip install numpy pandas matplotlib scikit-learn
+
+Run the notebook:
+
+jupyter notebook
+
+Then open:
+
+simple_linear_regression.ipynb
+
+## Skills Demonstrated
+
+- Python Programming
+- Data Analysis
+- Data Visualization
+- Machine Learning Fundamentals
+- Simple Linear Regression
+- Model Evaluation
+
+## Author
+
+Mohammed Mahrous
+
+Computer Scientist  
+Machine Learning & AI Engineer
