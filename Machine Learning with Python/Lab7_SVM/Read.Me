@@ -1,0 +1,34 @@
+# Credit Card Fraud Detection: SVM vs Decision Tree
+
+## Overview
+This project compares a Decision Tree Classifier and a Linear SVM (Support Vector Machine) on a highly imbalanced credit card fraud dataset, evaluated using ROC-AUC. It also studies how feature selection affects each model.
+
+## Dataset
+IBM Credit Card Fraud Dataset (creditcard.csv)
+
+## Technologies
+- Python
+- Pandas
+- Scikit-learn
+- Matplotlib
+
+## Workflow
+1. Load dataset
+2. Class imbalance visualization
+3. Correlation analysis with target (`Class`)
+4. Feature standardization and L1 normalization
+5. Train/Test split
+6. Class imbalance handling via sample weights
+7. Decision Tree training and evaluation (max_depth=4)
+8. Linear SVM training and evaluation (class_weight='balanced')
+9. Top 6 correlated feature selection
+10. Model re-evaluation on reduced feature set (Q3/Q4)
+11. Comparative inference (Q5)
+
+## Evaluation Metrics
+- ROC-AUC Score
+
+## Results
+- Full feature set: both models score well, with feature scale/imbalance handling in place.
+- Reduced feature set (top 6 features): Decision Tree ROC-AUC increases (benefits from feature selection); SVM ROC-AUC decreases (needs higher dimensionality to build an effective hyperplane).
+- Inference: Decision Trees favor a small, informative feature set; SVMs favor higher-dimensional feature spaces.

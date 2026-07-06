@@ -1,0 +1,32 @@
+# NYC Taxi Tip Prediction using Regression Trees
+
+## Overview
+This project builds a Decision Tree Regressor to predict the `tip_amount` of NYC yellow taxi trips, using trip features such as fare, distance, and passenger count.
+
+## Dataset
+NYC Yellow Taxi Trip Dataset (yellow-tripdata.csv)
+
+## Technologies
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+
+## Workflow
+1. Load dataset
+2. Correlation analysis with target (`tip_amount`)
+3. Drop uninformative columns (payment_type, VendorID, store_and_fwd_flag, improvement_surcharge)
+4. Feature matrix construction and L1 normalization
+5. Train/Test split
+6. Decision Tree Regressor training (criterion='squared_error', max_depth=8)
+7. Model evaluation (MSE, R^2)
+8. Top correlated feature identification
+9. Depth comparison (max_depth=4)
+
+## Evaluation Metrics
+- Mean Squared Error (MSE)
+- R^2 Score
+
+## Results
+The model predicts taxi tip amounts and shows that a shallower tree (max_depth=4) generalizes better than a deeper one (max_depth=8), achieving lower MSE and higher R^2.
